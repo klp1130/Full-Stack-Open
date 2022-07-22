@@ -5,8 +5,28 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+    "dev": "nodemon index.js",
+    "test": "echo \\\"Error: no test specified\\\" && exit 1",
+    "build:ui": "rm -rf build && cd ../phonebook && npm run build && cp -r build ../Part3",
+    "deploy": "git push heroku master",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && npm run deploy",
+    "logs:prod": "heroku logs --tail",
+    "lint": "eslint ."
   },
   "author": "Keenan Lee-Peters",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "git": "^0.1.5",
+    "heroku": "^7.60.2",
+    "mongodb": "^4.7.0",
+    "mongoose": "^6.3.8",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "nodemon": "^2.0.16"
+  }
 }
