@@ -1,0 +1,11 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjYyY2FlOTIzOWJhYWU3ZmFiMmI4ZDU1OCIsImlhdCI6MTY1NzcxODM0NH0.eOXqEF-8UiquUhndVGIHP1MpIN7O-dXCHxIIAX0Tl78
+
+{
+    "title": "Here is another blog from Friday afternoon",
+    "author": "test_user",
+    "url": "dsfsdf.com",
+    "likes": 3,
+    "userId": "62cae9239baae7fab2b8d558"
+}
