@@ -1,0 +1,44 @@
+{
+  "name": "bloglist",
+  "version": "1.0.0",
+  "description": "a list of blogs",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node index.js",
+    "dev": "NODE_ENV=development nodemon index.js",
+    "lint": "eslint .",
+    "test": "NODE_ENV=test jest --verbose --runInBand --forceExit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klp1130/bloglist.git"
+  },
+  "author": "Keenan Lee-Peters",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klp1130/bloglist/issues"
+  },
+  "homepage": "https://github.com/klp1130/bloglist#readme",
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "jest": "^28.1.1",
+    "nodemon": "^2.0.18",
+    "supertest": "^6.2.4"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.4.0",
+    "mongoose-unique-validator": "^3.1.0",
+    "n_": "^3.0.1"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
